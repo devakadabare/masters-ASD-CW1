@@ -2,29 +2,31 @@ import java.time.LocalTime;
 
 class Museum extends Attarction {
     private String museumType;
+    private String contact;
 
     // create constructor
     public Museum(
-        int id, 
-        String name, 
-        LocalTime openingTime, 
-        LocalTime closingTime, 
-        double ticketPrice,
-        String museumType, 
-        String address
-    ) {
-        super(id, name, openingTime, closingTime, ticketPrice, address);
-        // if there is no ticketPrice set ticketPrice to 0
-        if (ticketPrice == 0) {
-            ticketPrice = 0;
-        }
-
+            int id,
+            String name,
+            LocalTime openingTime,
+            LocalTime closingTime,
+            double price,
+            String museumType,
+            String address,
+            String contact) {
+        super(id, name, openingTime, closingTime, price, address);
+        
         this.museumType = museumType;
+        this.contact = contact;
     }
 
-    // getter for museumType
+    // getters
     public String getMuseumType() {
         return museumType;
+    }
+
+    public String getContact() {
+        return contact;
     }
 
 }

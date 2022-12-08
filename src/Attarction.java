@@ -5,7 +5,8 @@ public class Attarction {
     private String name;
     private LocalTime openingTime;
     private LocalTime closingTime;
-    private double ticketPrice;
+    private double price;
+    private String currency = "GBP";
     private String address;
 
     // create constructor
@@ -14,14 +15,13 @@ public class Attarction {
             String name,
             LocalTime openingTime,
             LocalTime closingTime,
-            double ticketPrice,
-            String address
-    ) {
+            double price,
+            String address) {
         this.id = id;
         this.name = name;
         this.openingTime = openingTime;
         this.closingTime = closingTime;
-        this.ticketPrice = ticketPrice;
+        this.price = price;
         this.address = address;
     }
 
@@ -42,8 +42,12 @@ public class Attarction {
         return closingTime;
     }
 
-    public double getTicketPrice() {
-        return ticketPrice;
+    public double getPrice() {
+        return price;
+    }
+
+    public String getCurrency() {
+        return currency;
     }
 
     public String getAddress() {
