@@ -33,3 +33,4 @@ code. The main function should create a vector or list of attractions and find, 
 the list, which attractions are open after 1900 and which cost less than £5.
 Discuss any problems or issues that arose from implementing your class diagram., and explain
 how you solved them. 
+
