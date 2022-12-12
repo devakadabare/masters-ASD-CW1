@@ -29,4 +29,10 @@ class Museum extends Attarction {
         return contact;
     }
 
+    // print all attributes
+    public void print() {
+        super.print();
+        System.out.println("Museum Type: " + museumType);
+        System.out.println("Contact: " + contact);
+    }
 }

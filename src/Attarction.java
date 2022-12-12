@@ -54,4 +54,14 @@ public class Attarction {
         return address;
     }
 
+    public void print(){
+        System.out.println("Id: " + id);
+        System.out.println("Name: " + name);
+        System.out.println("Opening Time: " + openingTime);
+        System.out.println("Closing Time: " + closingTime);
+        System.out.println("Address: " + address);
+        System.out.println("Price: " + price);
+        System.out.println("Currency: " + currency);
+    }
+
 }
